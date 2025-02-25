@@ -1,0 +1,234 @@
+body {
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+html, body {
+    min-height: 100%; /* Altura mínima del 100% del viewport */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+    min-height: 100vh; /* Altura mínima del 100% del viewport */
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    flex-shrink: 0; /* Evita que el encabezado y el pie de página se encojan */
+}
+
+main {
+    flex-grow: 1; /* El contenido principal ocupa el espacio restante */
+}
+
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #ebe4e4; /* Texto blanco */
+}
+
+a {
+
+    color:red
+}
+img {
+    width: 200px;
+    height: 200px;
+
+
+}
+details {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+summary {
+    display: block; /* Evita que el título se oculte */
+    cursor: pointer;
+    list-style: none; /* Oculta el ícono predeterminado */
+}
+summary::-webkit-details-marker {
+    display: none; /* Oculta el ícono en navegadores basados en WebKit (Chrome, Safari) */
+}
+summary h3 {
+    display: inline-block; /* Permite que el título esté en línea con el ícono personalizado */
+    margin: 0; /*
+     Elimina el margen predeterminado del h3 */
+     color:rgb(255, 0, 0)
+}
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+
+
+
+
+h2 {
+    background-color:rgb(255, 0, 0); /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el título */
+    border: 1px solid #ccc; /* Borde opcional */
+}
+
+h2 {
+    display: none; /* Oculta el contenido por defecto */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    color:#fffcfc
+}
+
+/* Mostrar el contenido cuando el acordeón está activo */
+h2 {
+    display: block;
+}
+summary h2{
+    background-color:rgb(255, 0, 0); /* Color de fondo */
+    color: white;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+header {
+    background-color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Animación suave */
+}
+
+.carousel-item {
+    min-width: 100%; /* Cada item ocupa el 100% del contenedor */
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10; /* Asegura que los botones estén sobre las imágenes */
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.container {
+    width: 70%; /* Ocupa el 90% del ancho disponible */
+    max-width: 1200px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+}
+.section {
+    min-height: 300px; /* Altura mínima */
+    padding: 20px;
+}
+
+body {
+    margin: 0; /* Elimina el margen predeterminado del body */
+    padding: 0; /* Elimina el padding predeterminado del body */
+}
+
+.container {
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    margin: 0 auto; /* Centra el contenedor sin agregar margen superior/inferior */
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre elementos */
+}
+
+.column {
+    flex: 1;
+    min-width: 250px;
+}
+/* Archivo styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+header, main, footer {
+    padding: 20px;
+}
